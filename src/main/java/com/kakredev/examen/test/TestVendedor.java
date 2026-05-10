@@ -5,7 +5,7 @@ import com.kakredev.examen.Vendedor;
 public class TestVendedor {
 
 	public static void main(String[] args) {
-		Vendedor vendedor1 = new Vendedor("1723456789");
+		Vendedor vendedor1 = new Vendedor("1723456789","M");
 
 		vendedor1.setNumeroVentas(10);
 		vendedor1.setSueldoFijo(500);

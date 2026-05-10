@@ -7,3 +7,5 @@
 
 # Permitir gitignore
 !.gitignore
+
+!videos.txt

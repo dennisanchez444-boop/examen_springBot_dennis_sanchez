@@ -9,7 +9,7 @@ public class TestVendedorJUnit {
 	@Test
 	public void testCalcularSueldo() {
 
-		Vendedor vendedor = new Vendedor("1723456789");
+		Vendedor vendedor = new Vendedor("1723456789","V");
 		vendedor.setSueldoFijo(500.0);
 
 		double sueldo = vendedor.calcularSueldo();

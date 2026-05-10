@@ -9,7 +9,7 @@ public class TestAdmin {
 
 	public static void main(String[] args) {
 		AdminVentas admin = new AdminVentas();
-		Vendedor vendedor1 = new Vendedor("111");
+		Vendedor vendedor1 = new Vendedor("111","V");
 		vendedor1.setSueldoFijo(500);
 
 		VendedorComision vendedor2 = new VendedorComision("222");
@@ -27,7 +27,14 @@ public class TestAdmin {
 		System.out.println(admin.calcularSueldo("111"));
 		System.out.println(admin.calcularSueldo("222"));
 		System.out.println(admin.calcularSueldo("333"));
-
 		System.out.println(admin.calcularSueldo("999"));
+		
+		//NullPointerExepccion
+		Vendedor vendedorNulo = null;
+		if(vendedorNulo != null) {
+		System.out.println(vendedorNulo.calcularSueldo());
+	}else {
+		System.out.println("El vendedor es null");
 	}
+}
 }
